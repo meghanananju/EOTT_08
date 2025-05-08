@@ -105,6 +105,19 @@ exports.configurations = {
       loginabsent: "Please login to continue",
       Error: "Error has occurred; please try again later.",
     },
+    profile: {
+      noUsername: "Please provide username",
+      userNotFound: "User not found",
+      Error: "Error has occurred; please try again later.",
+
+    },
+    updatePassword: {
+      provideDetails: "Please provide old password & new password",
+      userNotFound: "User not found",
+      passwordNotMatched: "Password mismatch, can't update",
+      passwordChangeSuccessful: "Password changed successfully",
+      Error: "Error has occurred; please try again later.",
+    }
   },
   logger: {
     //userlogin
@@ -121,6 +134,10 @@ exports.configurations = {
     getProxyLogger: "GET ALL PROXY API HAS BEEN HIT",
     createSuccessorGidLogger: "CREATE SUCCESSOR GID API HAS BEEN HIT",
     logout: "LOGOUT  API HAS BEEN HIT",
+    //Profile
+    profileLogger: "PROFILE API HAS BEEN HIT",
+    updatePasswordLogger: "UPDATE PASSWORD API HAS BEEN HIT",
+
     //components
     getAllComponentsLogger: "GET ALL COMPONENTS API HAS BEEN HIT",
     updateComponenTypeLogger: "UPDATE  COMPONENT TYPE API HAS BEEN HIT",

@@ -71,6 +71,8 @@ app.use("", api);
 const { login } = require("./controllers/login/login");
 const { addUser } = require("./controllers/user/addUser");
 const { getAllUsers } = require("./controllers/user/getAllUsers");
+const { profile } = require("./controllers/user/profile")
+const { updatePassword } = require("./controllers/user/updatePassword")
 
 const { uploadCourse } = require("./controllers/courses/uploadCourse");
 const {
@@ -84,6 +86,9 @@ const { getCourseContent } = require("./controllers/courses/getCourseContent");
 /****************************************************************/
 api.post("/login", login);
 api.post("/addUser", addUser);
+api.post("/profile", profile)
+api.post("/updatePassword", updatePassword)
+
 api.post(
   "/uploadCourse",
   upload.single("fileInformations"),
